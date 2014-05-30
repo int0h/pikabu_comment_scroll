@@ -73,6 +73,9 @@
 
     var selCom; //selected comment
     var commentsDiv = document.getElementById('commentsDiv');
+    if (!commentsDiv){
+        return;
+        };
     var cdOffsetX = getElmPos(commentsDiv).left + 21; // comment div 
     var cbsClick; // btn click events
     var dcbsClick;
